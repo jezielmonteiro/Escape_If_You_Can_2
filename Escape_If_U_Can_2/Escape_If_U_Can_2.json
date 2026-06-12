@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "adaptWidth",
     "templateSlug": "",
     "version": "1.0.0",
-    "name": "Escape_If_U_Can",
+    "name": "Escape_If_U_Can_2",
     "description": "",
     "author": "",
     "windowWidth": 320,
@@ -57128,7 +57128,137 @@
               "colorG": 211,
               "colorR": 126,
               "creationTime": 0,
-              "folded": true,
+              "name": "Dash Player",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"LControl\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ClearForces"
+                      },
+                      "parameters": [
+                        "Player"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "FlippableCapability::FlippableBehavior::FlippedX"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Flippable"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AddForceAL"
+                          },
+                          "parameters": [
+                            "Player",
+                            "180",
+                            "150",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "0.3"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ClearForces"
+                          },
+                          "parameters": [
+                            "Player"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "FlippableCapability::FlippableBehavior::FlippedX"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Flippable"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AddForceAL"
+                          },
+                          "parameters": [
+                            "Player",
+                            "180",
+                            "-150",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "0.3"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ClearForces"
+                          },
+                          "parameters": [
+                            "Player"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 33,
+              "colorG": 211,
+              "colorR": 126,
+              "creationTime": 0,
               "name": "Animations / Double Jump",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -57415,6 +57545,7 @@
               "colorG": 211,
               "colorR": 126,
               "creationTime": 0,
+              "folded": true,
               "name": "Collisions",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
