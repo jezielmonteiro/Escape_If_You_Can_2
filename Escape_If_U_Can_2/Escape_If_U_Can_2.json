@@ -6260,7 +6260,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 3.3635792882523985,
+        "zoomFactor": 2.6667374902553305,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -17105,7 +17105,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.8515977016558423,
+        "zoomFactor": 1.8515977016558438,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -17554,8 +17554,8 @@
           "name": "Controls_Text",
           "persistentUuid": "35139977-ff97-4deb-bc9d-9cf57db7f7bf",
           "width": 0,
-          "x": 79,
-          "y": 43,
+          "x": 69,
+          "y": 42,
           "zOrder": 56,
           "numberProperties": [],
           "stringProperties": [],
@@ -22182,7 +22182,7 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "Left: A or Left Arrow\n\nRight: D or Right Arrow\n\nJump: Space or Up Arrow\n\nDash: Ctrl",
+            "text": "Left: A or Left Arrow\n\nRight: D or Right Arrow\n\nJump: Space, W or Up Arrow\n\nDash: Ctrl",
             "opacity": 255,
             "scale": 1,
             "fontSize": 20,
