@@ -6260,7 +6260,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 2.6667374902553305,
+        "zoomFactor": 2.0452942894725457,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -6460,7 +6460,7 @@
           "persistentUuid": "befdf389-a3c5-46d8-b448-4d6b093b2129",
           "width": 0,
           "x": 224,
-          "y": 23,
+          "y": 24,
           "zOrder": 60,
           "numberProperties": [],
           "stringProperties": [],
@@ -27912,7 +27912,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.732768394453215,
+        "zoomFactor": 1.9140341873314701,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -30059,7 +30059,13 @@
           "name": "Plant_Mutant",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "walkDirection",
+              "type": "number",
+              "value": 1
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -55710,6 +55716,7 @@
               "colorG": 211,
               "colorR": 126,
               "creationTime": 0,
+              "folded": true,
               "name": "Dash Player",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -55841,6 +55848,7 @@
               "colorG": 211,
               "colorR": 126,
               "creationTime": 0,
+              "folded": true,
               "name": "Animations / Double Jump",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -56127,7 +56135,6 @@
               "colorG": 211,
               "colorR": 126,
               "creationTime": 0,
-              "folded": true,
               "name": "Collisions",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -56360,55 +56367,63 @@
                       "type": "BuiltinCommonInstructions::Group",
                       "events": [
                         {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
+                          "type": "BuiltinCommonInstructions::ForEach",
+                          "object": "Plant_Mutant",
+                          "conditions": [],
+                          "actions": [],
+                          "events": [
                             {
-                              "type": {
-                                "value": "PosX"
-                              },
-                              "parameters": [
-                                "Player",
-                                "<",
-                                "Plant_Mutant.X()"
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "PosX"
+                                  },
+                                  "parameters": [
+                                    "Player",
+                                    ">",
+                                    "Plant_Mutant.X()"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                                  },
+                                  "parameters": [
+                                    "Plant_Mutant",
+                                    "Flippable",
+                                    ""
+                                  ]
+                                }
                               ]
-                            }
-                          ],
-                          "actions": [
+                            },
                             {
-                              "type": {
-                                "value": "FlippableCapability::FlippableBehavior::FlipX"
-                              },
-                              "parameters": [
-                                "Plant_Mutant",
-                                "Flippable",
-                                "yes"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "PosX"
-                              },
-                              "parameters": [
-                                "Player",
-                                ">",
-                                "Plant_Mutant.X()"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "FlippableCapability::FlippableBehavior::FlipX"
-                              },
-                              "parameters": [
-                                "Plant_Mutant",
-                                "Flippable",
-                                "no"
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "PosX"
+                                  },
+                                  "parameters": [
+                                    "Player",
+                                    "<",
+                                    "Plant_Mutant.X()"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                                  },
+                                  "parameters": [
+                                    "Plant_Mutant",
+                                    "Flippable",
+                                    "yes"
+                                  ]
+                                }
                               ]
                             }
                           ]
