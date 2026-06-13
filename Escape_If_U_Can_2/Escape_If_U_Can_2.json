@@ -6260,7 +6260,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 2.0452942894725457,
+        "zoomFactor": 1.676244864332639,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -27947,7 +27947,7 @@
           "width": 0,
           "x": 7,
           "y": 10,
-          "zOrder": 5,
+          "zOrder": 54,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -28648,6 +28648,22 @@
           "x": 171,
           "y": 10,
           "zOrder": 52,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Bat",
+          "persistentUuid": "e7bb5e7d-6e85-40c1-8c05-c654ca3a43e3",
+          "width": 0,
+          "x": 288,
+          "y": 0,
+          "zOrder": 53,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -32294,6 +32310,224 @@
             "align": "center",
             "verticalTextAlignment": "center"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Bat",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "flightDirection",
+              "type": "number",
+              "value": 1
+            }
+          ],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "Fly",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/enemies/bat/Bat_Fly_1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 8
+                          },
+                          {
+                            "x": 21,
+                            "y": 8
+                          },
+                          {
+                            "x": 21,
+                            "y": 23
+                          },
+                          {
+                            "x": 7,
+                            "y": 23
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/enemies/bat/Bat_Fly_2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 8
+                          },
+                          {
+                            "x": 21,
+                            "y": 8
+                          },
+                          {
+                            "x": 21,
+                            "y": 23
+                          },
+                          {
+                            "x": 7,
+                            "y": 23
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/enemies/bat/Bat_Fly_3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 8
+                          },
+                          {
+                            "x": 21,
+                            "y": 8
+                          },
+                          {
+                            "x": 21,
+                            "y": 23
+                          },
+                          {
+                            "x": 7,
+                            "y": 23
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/enemies/bat/Bat_Fly_4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 8
+                          },
+                          {
+                            "x": 21,
+                            "y": 8
+                          },
+                          {
+                            "x": 21,
+                            "y": 23
+                          },
+                          {
+                            "x": 7,
+                            "y": 23
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/enemies/bat/Bat_Fly_6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 8
+                          },
+                          {
+                            "x": 21,
+                            "y": 8
+                          },
+                          {
+                            "x": 21,
+                            "y": 23
+                          },
+                          {
+                            "x": 7,
+                            "y": 23
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -32370,6 +32604,9 @@
           },
           {
             "objectName": "UI_KeyCount"
+          },
+          {
+            "objectName": "Bat"
           }
         ]
       },
@@ -32635,7 +32872,7 @@
           "width": 0,
           "x": 7,
           "y": 10,
-          "zOrder": 5,
+          "zOrder": 113,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -33659,13 +33896,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
           "keepRatio": true,
           "layer": "",
           "name": "Bat",
           "persistentUuid": "59fbd9e3-9b19-4190-94ca-2e5d5c80254c",
-          "width": 0,
+          "width": 32,
           "x": 144,
           "y": 96,
           "zOrder": 101,
@@ -38414,16 +38652,23 @@
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Bat",
+          "persistentUuid": "30607342-2417-4f7c-b76b-b90b58b80a02",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "flightDirection",
+              "type": "number",
+              "value": 1
+            }
+          ],
           "effects": [],
           "behaviors": [
             {
               "name": "Platform",
+              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
               "canBeGrabbed": true,
-              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -39132,7 +39377,7 @@
           "width": 0,
           "x": 7,
           "y": 10,
-          "zOrder": 5,
+          "zOrder": 101,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -44240,14 +44485,20 @@
           "name": "Bat",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "flightDirection",
+              "type": "number",
+              "value": 1
+            }
+          ],
           "effects": [],
           "behaviors": [
             {
               "name": "Platform",
+              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
               "canBeGrabbed": true,
-              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -56430,6 +56681,162 @@
                         }
                       ],
                       "parameters": []
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 74,
+                  "colorG": 74,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Bat",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberObjectVariable"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "flightDirection",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AddForceXY"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "100",
+                            "0",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "FlippableCapability::FlippableBehavior::FlipX"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "Flippable",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1.5"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberObjectVariable"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "flightDirection",
+                            "=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ClearForces"
+                          },
+                          "parameters": [
+                            "Bat"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberObjectVariable"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "flightDirection",
+                            "=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AddForceXY"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "-100",
+                            "0",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "FlippableCapability::FlippableBehavior::FlipX"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "Flippable",
+                            "yes"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1.5"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberObjectVariable"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "flightDirection",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ClearForces"
+                          },
+                          "parameters": [
+                            "Bat"
+                          ]
+                        }
+                      ]
                     }
                   ],
                   "parameters": []
