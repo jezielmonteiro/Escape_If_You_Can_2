@@ -6217,6 +6217,30 @@
         "name": "assets/ui/quest_mark/Quest Mark_Idle_6.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/ui/lives/Lives_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/lives/Lives_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/lives/Lives_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/lives/Lives_5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/lives/No_Lives.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/lives/No_Lives.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -6234,7 +6258,7 @@
     {
       "name": "life",
       "type": "number",
-      "value": 3
+      "value": 5
     }
   ],
   "layouts": [
@@ -27912,7 +27936,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.9140341873314701,
+        "zoomFactor": 1.978576051913149,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -30722,16 +30746,52 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "Dead",
+              "name": "LF0",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "timeBetweenFrames": 0.2,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets/ui/lives/Lives_0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 9
+                          },
+                          {
+                            "x": 1,
+                            "y": 9
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/ui/lives/No_Lives.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -30770,7 +30830,7 @@
               ]
             },
             {
-              "name": "Critical",
+              "name": "LF1",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -30818,7 +30878,7 @@
               ]
             },
             {
-              "name": "Damaged",
+              "name": "LF2",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -30866,7 +30926,7 @@
               ]
             },
             {
-              "name": "Full",
+              "name": "LF3",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -30876,6 +30936,102 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets/ui/lives/Lives_3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 9
+                          },
+                          {
+                            "x": 1,
+                            "y": 9
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LF4",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/ui/lives/Lives_4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 9
+                          },
+                          {
+                            "x": 1,
+                            "y": 9
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LF5",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/ui/lives/Lives_5.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -36158,16 +36314,52 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "Dead",
+              "name": "LF0",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "timeBetweenFrames": 0.2,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets/ui/lives/Lives_0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 9
+                          },
+                          {
+                            "x": 1,
+                            "y": 9
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/ui/lives/No_Lives.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -36206,7 +36398,7 @@
               ]
             },
             {
-              "name": "Critical",
+              "name": "LF1",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -36254,7 +36446,7 @@
               ]
             },
             {
-              "name": "Damaged",
+              "name": "LF2",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -36302,7 +36494,7 @@
               ]
             },
             {
-              "name": "Full",
+              "name": "LF3",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -36312,6 +36504,102 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets/ui/lives/Lives_3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 9
+                          },
+                          {
+                            "x": 1,
+                            "y": 9
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LF4",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/ui/lives/Lives_4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 9
+                          },
+                          {
+                            "x": 1,
+                            "y": 9
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LF5",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/ui/lives/Lives_5.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -42490,16 +42778,52 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "Dead",
+              "name": "LF0",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "timeBetweenFrames": 0.2,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets/ui/lives/Lives_0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 9
+                          },
+                          {
+                            "x": 1,
+                            "y": 9
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/ui/lives/No_Lives.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -42538,7 +42862,7 @@
               ]
             },
             {
-              "name": "Critical",
+              "name": "LF1",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -42586,7 +42910,7 @@
               ]
             },
             {
-              "name": "Damaged",
+              "name": "LF2",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -42634,7 +42958,7 @@
               ]
             },
             {
-              "name": "Full",
+              "name": "LF3",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -42644,6 +42968,102 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets/ui/lives/Lives_3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 9
+                          },
+                          {
+                            "x": 1,
+                            "y": 9
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LF4",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/ui/lives/Lives_4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 2
+                          },
+                          {
+                            "x": 24,
+                            "y": 9
+                          },
+                          {
+                            "x": 1,
+                            "y": 9
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LF5",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/ui/lives/Lives_5.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -45061,7 +45481,7 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "1.25"
+                    "1.5"
                   ]
                 },
                 {
@@ -45081,7 +45501,7 @@
                   "parameters": [
                     "life",
                     "=",
-                    "3"
+                    "5"
                   ]
                 }
               ]
@@ -56544,7 +56964,7 @@
                                 "value": "Wait"
                               },
                               "parameters": [
-                                "1.25"
+                                "1.5"
                               ]
                             },
                             {
@@ -56554,7 +56974,7 @@
                               "parameters": [
                                 "life",
                                 "=",
-                                "3"
+                                "5"
                               ]
                             },
                             {
