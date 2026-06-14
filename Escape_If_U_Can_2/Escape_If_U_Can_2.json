@@ -6281,6 +6281,26 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/sfx/select_4.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/select_4.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/cancel.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/cancel.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -6324,7 +6344,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 2.4955952555383187,
+        "zoomFactor": 1.9140341873314979,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -11241,7 +11261,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets/sfx/select_3.wav",
+                    "assets/sfx/select_4.wav",
                     "",
                     "",
                     ""
@@ -11819,6 +11839,26 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/cancel.wav",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.2"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Quit"
