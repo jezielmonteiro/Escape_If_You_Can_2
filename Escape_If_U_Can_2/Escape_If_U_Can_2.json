@@ -6311,6 +6311,16 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/sfx/8_bit_negative_long.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/8_bit_negative_long.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -45966,7 +45976,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.6762448643326238,
+        "zoomFactor": 2.33543635330563,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -46149,7 +46159,7 @@
           "name": "Victory_Text",
           "persistentUuid": "cd448b18-3518-4027-8f75-3e6d40a8a04e",
           "width": 0,
-          "x": 141,
+          "x": 147,
           "y": 64,
           "zOrder": 53,
           "numberProperties": [],
@@ -50727,7 +50737,7 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "You won!",
+            "text": "Victory!",
             "opacity": 255,
             "scale": 1,
             "fontSize": 20,
@@ -51344,7 +51354,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.4679972091401758,
+        "zoomFactor": 1.9140341873314852,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -51352,23 +51362,6 @@
       "objectsGroups": [],
       "variables": [],
       "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 180,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Full_Background",
-          "persistentUuid": "76c473fe-9186-4f1c-bc22-98920b3f224a",
-          "width": 352,
-          "x": 0,
-          "y": 0,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
         {
           "angle": 0,
           "customSize": true,
@@ -51495,7 +51488,7 @@
           "name": "PlayAgain_Text",
           "persistentUuid": "f0e85710-36f9-4705-b313-e44d0cf25f3e",
           "width": 0,
-          "x": 156,
+          "x": 160,
           "y": 112,
           "zOrder": 51,
           "numberProperties": [],
@@ -51527,9 +51520,26 @@
           "name": "GameOver_Text",
           "persistentUuid": "9d0b6463-8dc6-4de6-a352-88aed8e44d41",
           "width": 0,
-          "x": 128,
+          "x": 136,
           "y": 64,
           "zOrder": 54,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 192,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Cave_Background_2",
+          "persistentUuid": "d5da0b13-7529-4d16-bee9-8fb4cba5e3a2",
+          "width": 352,
+          "x": 0,
+          "y": 0,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -55956,7 +55966,7 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "Jogar ",
+            "text": "Play",
             "opacity": 255,
             "scale": 1,
             "fontSize": 20,
@@ -56125,7 +56135,7 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "Voce perdeu!",
+            "text": "Game Over",
             "opacity": 255,
             "scale": 1,
             "fontSize": 20,
@@ -56135,6 +56145,99 @@
             "align": "center",
             "verticalTextAlignment": "center"
           }
+        },
+        {
+          "assetStoreId": "",
+          "height": 20,
+          "name": "Tiled_Tile_30",
+          "texture": "assets/tile/tiled_Tile 30 tiled sprite.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 20,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Tile_7",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/tile/Tile 7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 24,
+                            "y": 0
+                          },
+                          {
+                            "x": 24,
+                            "y": 24
+                          },
+                          {
+                            "x": 0,
+                            "y": 24
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 20,
+          "name": "Cave_Background_2",
+          "texture": "assets/misc/Cave Background_Rocks 2.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 20,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "height": 20,
+          "name": "Cave_Background_1",
+          "texture": "assets/misc/Cave Background_Rocks 1.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 20,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -56259,10 +56362,61 @@
           },
           {
             "objectName": "UI_Lives"
+          },
+          {
+            "objectName": "Tiled_Tile_30"
+          },
+          {
+            "objectName": "Tile_7"
+          },
+          {
+            "objectName": "Cave_Background_2"
+          },
+          {
+            "objectName": "Cave_Background_1"
           }
         ]
       },
       "events": [
+        {
+          "colorB": 254,
+          "colorG": 19,
+          "colorR": 144,
+          "creationTime": 0,
+          "name": "Game Over",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneJustBegins"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/8_bit_negative_long.wav",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
         {
           "colorB": 254,
           "colorG": 19,
@@ -56285,6 +56439,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -56297,6 +56457,18 @@
                     "Animation",
                     "=",
                     "\"Active\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/cursor.wav",
+                    "",
+                    "",
+                    ""
                   ]
                 }
               ]
@@ -56347,7 +56519,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonFromTextPressed"
+                    "value": "MouseButtonFromTextReleased"
                   },
                   "parameters": [
                     "",
@@ -56356,6 +56528,26 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/select_4.wav",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.2"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene"
@@ -56379,112 +56571,143 @@
           "name": "Menu",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "Menu_Button",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Menu_Button",
+                    "Animation",
+                    "=",
+                    "\"Active\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/cursor.wav",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "Menu_Button",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Menu_Button",
+                    "Animation",
+                    "=",
+                    "\"Default\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "Menu_Button",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/select_4.wav",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Menu\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
           "parameters": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "IsCursorOnObject"
-              },
-              "parameters": [
-                "Menu_Button",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Menu_Button",
-                "Animation",
-                "=",
-                "\"Active\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "IsCursorOnObject"
-              },
-              "parameters": [
-                "Menu_Button",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Menu_Button",
-                "Animation",
-                "=",
-                "\"Default\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "IsCursorOnObject"
-              },
-              "parameters": [
-                "Menu_Button",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "MouseButtonFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Menu\"",
-                ""
-              ]
-            }
-          ]
         }
       ],
       "layers": [
