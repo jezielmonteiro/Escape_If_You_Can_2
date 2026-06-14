@@ -6371,6 +6371,36 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/sfx/lose.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/lose.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/swipe.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/swipe.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/dash.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/dash.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -51404,7 +51434,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.8515977016558387,
+        "zoomFactor": 2.1855559102531714,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -51539,7 +51569,7 @@
           "persistentUuid": "f0e85710-36f9-4705-b313-e44d0cf25f3e",
           "width": 0,
           "x": 160,
-          "y": 112,
+          "y": 113,
           "zOrder": 51,
           "numberProperties": [],
           "stringProperties": [],
@@ -56894,6 +56924,7 @@
               "colorG": 211,
               "colorR": 126,
               "creationTime": 0,
+              "folded": true,
               "name": "Default Controls",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -56966,8 +56997,23 @@
                             "",
                             "\"Up\""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Space\""
+                          ]
                         }
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -56978,6 +57024,18 @@
                       "parameters": [
                         "Player",
                         "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/sfx/jump_short.wav",
+                        "",
+                        "",
+                        ""
                       ]
                     }
                   ]
@@ -57032,6 +57090,7 @@
               "colorG": 211,
               "colorR": 126,
               "creationTime": 0,
+              "folded": true,
               "name": "Flip Player",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -57100,7 +57159,6 @@
               "colorG": 211,
               "colorR": 126,
               "creationTime": 0,
-              "folded": true,
               "name": "Dash Player",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -57131,6 +57189,18 @@
                       },
                       "parameters": [
                         "Player"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/sfx/dash.wav",
+                        "",
+                        "50",
+                        ""
                       ]
                     }
                   ],
@@ -57232,6 +57302,7 @@
               "colorG": 211,
               "colorR": 126,
               "creationTime": 0,
+              "folded": true,
               "name": "Animations / Double Jump",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -57521,6 +57592,7 @@
                   "colorG": 117,
                   "colorR": 65,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Plant_Mutant",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -57828,6 +57900,7 @@
                   "colorG": 74,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Bat",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -57984,6 +58057,7 @@
                   "colorG": 231,
                   "colorR": 248,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Key",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -58090,6 +58164,7 @@
                   "colorG": 87,
                   "colorR": 139,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Chest",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
