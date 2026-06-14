@@ -6241,6 +6241,46 @@
         "name": "assets/ui/lives/No_Lives.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/sfx/cursor.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/cursor.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/popup_open.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/popup_open.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/popup_close.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/popup_close.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/select_3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/select_3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -6284,7 +6324,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.676244864332639,
+        "zoomFactor": 2.4955952555383187,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -11106,6 +11146,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -11118,6 +11164,18 @@
                     "Animation",
                     "=",
                     "\"Active\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/cursor.wav",
+                    "no",
+                    "",
+                    ""
                   ]
                 }
               ]
@@ -11177,6 +11235,26 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/select_3.wav",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.2"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene"
@@ -11214,6 +11292,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -11226,6 +11310,18 @@
                     "Animation",
                     "=",
                     "\"Active\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/cursor.wav",
+                    "",
+                    "",
+                    ""
                   ]
                 }
               ]
@@ -11285,6 +11381,26 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/popup_open.wav",
+                    "no",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.2"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene"
@@ -11322,6 +11438,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -11334,6 +11456,18 @@
                     "Animation",
                     "=",
                     "\"Active\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/cursor.wav",
+                    "",
+                    "",
+                    ""
                   ]
                 }
               ]
@@ -11393,6 +11527,26 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/popup_open.wav",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.2"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene"
@@ -11430,6 +11584,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -11442,6 +11602,18 @@
                     "Animation",
                     "=",
                     "\"Active\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/cursor.wav",
+                    "",
+                    "",
+                    ""
                   ]
                 }
               ]
@@ -11503,6 +11675,26 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/popup_open.wav",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.2"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Scene"
                   },
                   "parameters": [
@@ -11538,6 +11730,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -11550,6 +11748,18 @@
                     "Animation",
                     "=",
                     "\"Active\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/cursor.wav",
+                    "",
+                    "",
+                    ""
                   ]
                 }
               ]
@@ -11759,7 +11969,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 2.045294289472538,
+        "zoomFactor": 2.33543635330564,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -12209,8 +12419,8 @@
           "name": "History_Text",
           "persistentUuid": "9d6e9396-3822-48f4-b38b-0ff28a426335",
           "width": 189,
-          "x": 81,
-          "y": 38,
+          "x": 82,
+          "y": 35,
           "zOrder": 54,
           "numberProperties": [],
           "stringProperties": [],
@@ -16577,7 +16787,7 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "The player must escape a hostile environment, avoiding enemies and overcoming obstacles. To win, the player must complete 10 levels and, in each level, collect a key, use it to open the chest and escape.",
+            "text": "You must escape a hostile environment, avoiding enemies and overcoming obstacles. To win, you must complete 10 levels and, in each level, collect a key, use it to open the chest and escape!",
             "opacity": 255,
             "scale": 1,
             "fontSize": 20,
@@ -16977,6 +17187,26 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/popup_close.wav",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.22"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene"
@@ -22371,6 +22601,26 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/popup_close.wav",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.22"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Scene"
                   },
                   "parameters": [
@@ -22521,7 +22771,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 2.1142622880247908,
+        "zoomFactor": 2.3354363533056515,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -27618,7 +27868,7 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "Created by:\n\ncrashxd\n\nAssets by:\n\nWishForge Games",
+            "text": "Created by:\n\ncrashxd\n\nMain Assets by:\n\nWishForge Games",
             "opacity": 255,
             "scale": 1,
             "fontSize": 20,
@@ -27784,6 +28034,26 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sfx/popup_close.wav",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.22"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene"
@@ -32483,10 +32753,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -38954,8 +39224,8 @@
           "behaviors": [
             {
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "platformType": "NormalPlatform",
               "canBeGrabbed": true,
               "yGrabOffset": 0
             }
@@ -44916,8 +45186,8 @@
           "behaviors": [
             {
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "platformType": "NormalPlatform",
               "canBeGrabbed": true,
               "yGrabOffset": 0
             }
