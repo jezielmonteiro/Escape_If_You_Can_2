@@ -6321,6 +6321,36 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/sfx/jump_short.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/jump_short.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/jump_square.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/jump_square.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/hit_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/hit_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -6364,7 +6394,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.9140341873314979,
+        "zoomFactor": 1.79119791666681,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -51354,7 +51384,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.9140341873314852,
+        "zoomFactor": 1.8515977016558387,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -56844,7 +56874,6 @@
               "colorG": 211,
               "colorR": 126,
               "creationTime": 0,
-              "folded": true,
               "name": "Default Controls",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -56983,7 +57012,6 @@
               "colorG": 211,
               "colorR": 126,
               "creationTime": 0,
-              "folded": true,
               "name": "Flip Player",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -57184,7 +57212,6 @@
               "colorG": 211,
               "colorR": 126,
               "creationTime": 0,
-              "folded": true,
               "name": "Animations / Double Jump",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -57392,12 +57419,6 @@
                         "<",
                         "1"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -57527,6 +57548,18 @@
                             "Animation",
                             "=",
                             "\"Attack\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/sfx/hit_1.wav",
+                            "",
+                            "",
+                            ""
                           ]
                         },
                         {
