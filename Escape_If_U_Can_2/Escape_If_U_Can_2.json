@@ -6351,6 +6351,26 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/sfx/collect_3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/collect_3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/collect.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/collect.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -57982,6 +58002,12 @@
                             "",
                             ""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
                         }
                       ],
                       "actions": [
@@ -57994,6 +58020,18 @@
                             "Animation",
                             "=",
                             "\"Collect\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/sfx/collect.wav",
+                            "",
+                            "",
+                            ""
                           ]
                         }
                       ]
@@ -58127,6 +58165,18 @@
                           },
                           "parameters": [
                             "0.625"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/sfx/collect_3.wav",
+                            "",
+                            "",
+                            ""
                           ]
                         },
                         {
