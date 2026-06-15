@@ -10,7 +10,7 @@
 <h2>🔄 Changes</h2>
 <ul>
     <li>Efeitos Sonoros</li>
-    <li>+7 Levels</li>
+    <li>+3 Levels</li>
     <li>+1 Inimigo</li>
     <li>Ajustes no Comportamento dos Inimigos</li>
     <li>Nova Mecânica de Dash</li>
