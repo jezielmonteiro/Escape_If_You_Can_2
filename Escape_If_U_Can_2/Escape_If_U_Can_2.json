@@ -6512,7 +6512,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 2.1943698117912844,
+        "zoomFactor": 2.122788676915113,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -11336,11 +11336,10 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetFullScreen"
+                    "value": "AdvancedWindow::Maximize"
                   },
                   "parameters": [
-                    "",
-                    "no",
+                    "yes",
                     ""
                   ]
                 }
