@@ -25,8 +25,8 @@
     "windowWidth": 320,
     "windowHeight": 180,
     "latestCompilationDirectory": "",
-    "maxFPS": 144,
-    "minFPS": 20,
+    "maxFPS": 0,
+    "minFPS": 30,
     "verticalSync": false,
     "platformSpecificAssets": {
       "android-icon-144": "",
@@ -6508,7 +6508,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.207966202636111,
+        "zoomFactor": 1.3343321683311764,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -11308,6 +11308,41 @@
         ]
       },
       "events": [
+        {
+          "colorB": 254,
+          "colorG": 19,
+          "colorR": 144,
+          "creationTime": 0,
+          "name": "Resolution",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AdvancedWindow::Maximize"
+              },
+              "parameters": [
+                "yes",
+                ""
+              ]
+            }
+          ]
+        },
         {
           "colorB": 254,
           "colorG": 19,
