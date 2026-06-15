@@ -7,7 +7,7 @@
     "revision": 0
   },
   "properties": {
-    "adaptGameResolutionAtRuntime": true,
+    "adaptGameResolutionAtRuntime": false,
     "antialiasingMode": "MSAA",
     "antialisingEnabledOnMobile": false,
     "folderProject": false,
@@ -16,15 +16,15 @@
     "pixelsRounding": true,
     "projectUuid": "d59805d3-b1c8-4c6a-85c6-364ebd477878",
     "scaleMode": "nearest",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "",
     "templateSlug": "",
     "version": "1.0.0",
     "name": "Escape_If_U_Can_2",
-    "description": "",
+    "description": "Escape If U Can 2 is a platformer game developed in GDevelop for the Digital Game Development course I'm taking in college. \n\nIn this game, you must escape a hostile environment, avoiding enemies and overcoming obstacles. To win, you must complete 6 levels and, in each level, collect a key, use it to open the chest and escape!",
     "author": "",
-    "windowWidth": 320,
+    "windowWidth": 352,
     "windowHeight": 180,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "C:\\Users\\Jeziel\\Desktop\\bagunça\\faculdade\\disciplinas\\desenvolvimento jogos digitais\\Escape_If_U_Can_2",
     "maxFPS": 0,
     "minFPS": 30,
     "verticalSync": false,
@@ -77,8 +77,12 @@
       "placement": "bottom-left",
       "showWatermark": true
     },
-    "authorIds": [],
-    "authorUsernames": [],
+    "authorIds": [
+      "ZXmDQ7fEKHc00kDcKb1tb5gNxGI3"
+    ],
+    "authorUsernames": [
+      "crashxd_"
+    ],
     "categories": [],
     "playableDevices": [
       "mobile"
@@ -6508,7 +6512,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.4739173426855563,
+        "zoomFactor": 2.1943698117912844,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -11332,10 +11336,11 @@
               "actions": [
                 {
                   "type": {
-                    "value": "AdvancedWindow::Maximize"
+                    "value": "SetFullScreen"
                   },
                   "parameters": [
-                    "yes",
+                    "",
+                    "no",
                     ""
                   ]
                 }
@@ -28446,7 +28451,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.9140341873314726,
+        "zoomFactor": 1.9785760519131521,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -29240,9 +29245,9 @@
               "TintColor": "\"255;255;255\""
             },
             {
-              "ignoreDefaultControls": true,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "ignoreDefaultControls": true,
               "maxSpeed": 150,
               "acceleration": 800,
               "deceleration": 800,
@@ -33205,6 +33210,8 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -33215,10 +33222,8 @@
               "gridOffsetX": 0,
               "gridOffsetY": 0,
               "maxSpeed": 200,
-              "name": "Pathfinding",
               "rotateObject": false,
-              "smoothingMaxCellGap": 1,
-              "type": "PathfindingBehavior::PathfindingBehavior"
+              "smoothingMaxCellGap": 1
             }
           ],
           "animations": [
@@ -35094,9 +35099,9 @@
               "TintColor": "\"255;255;255\""
             },
             {
-              "ignoreDefaultControls": true,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "ignoreDefaultControls": true,
               "maxSpeed": 150,
               "acceleration": 800,
               "deceleration": 800,
@@ -41558,9 +41563,9 @@
               "TintColor": "\"255;255;255\""
             },
             {
-              "ignoreDefaultControls": true,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "ignoreDefaultControls": true,
               "maxSpeed": 150,
               "acceleration": 800,
               "deceleration": 800,
@@ -47912,9 +47917,9 @@
               "TintColor": "\"255;255;255\""
             },
             {
-              "ignoreDefaultControls": true,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "ignoreDefaultControls": true,
               "maxSpeed": 150,
               "acceleration": 800,
               "deceleration": 800,
@@ -54330,9 +54335,9 @@
               "TintColor": "\"255;255;255\""
             },
             {
-              "ignoreDefaultControls": true,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "ignoreDefaultControls": true,
               "maxSpeed": 150,
               "acceleration": 800,
               "deceleration": 800,
@@ -57962,10 +57967,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
@@ -58874,10 +58879,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
@@ -60910,9 +60915,9 @@
               "TintColor": "\"255;255;255\""
             },
             {
-              "ignoreDefaultControls": true,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "ignoreDefaultControls": true,
               "maxSpeed": 150,
               "acceleration": 800,
               "deceleration": 800,
@@ -65947,6 +65952,8 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -65957,10 +65964,8 @@
               "gridOffsetX": 0,
               "gridOffsetY": 0,
               "maxSpeed": 50,
-              "name": "Pathfinding",
               "rotateObject": false,
-              "smoothingMaxCellGap": 1,
-              "type": "PathfindingBehavior::PathfindingBehavior"
+              "smoothingMaxCellGap": 1
             }
           ],
           "animations": [
